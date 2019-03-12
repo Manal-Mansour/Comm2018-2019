@@ -1,0 +1,95 @@
+<html>
+    <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form Form1</title>
+        <style>
+            body{
+                font-size: 1vw;
+            }
+            .f{
+                
+                width: 20%;
+            
+            }
+         tr, td{
+            border: 2px solid gray;
+            padding: 4px;
+        }
+        table{
+            border: 1px solid black;
+            margin-left: auto;
+           margin-right: auto;
+            width: 70%;
+        }
+        tr{
+            background-color: aquamarine;
+        }
+        input.t{
+            width: 70%
+        }
+        </style>
+    </head>
+    <body>
+      <table>
+          <tr>
+              <td colspan="2" style="background-color: burlywood; color: crimson; text-align: center; font-size: 20;"><span>User Form</span></td>
+          </tr>
+          <tr>
+              <td>
+                  Enter Name:
+              </td>
+              <td><input type="text"  class="t" name="name" value="Enter your Name" ></input></td>
+          </tr>
+          <tr>
+              <td>Enter Password:</td>
+              <td><input type="password"  class="t" value="Enterthe password"> </input></td>
+          </tr>
+          <tr>
+              <td>Address:</td>
+              <td><textarea rows="3" cols="70%">Enter the Address</textarea></td>
+          </tr>
+          <tr>
+              <td>Select Course:</td>
+              <td><input type="checkbox" value="HTML">HTML</input><br/>
+              <input type="checkbox" value="CSS">CSS</input><br/>
+              <input type="checkbox" value="Javascript">Java Script</input>
+              </td>
+                         
+          </tr>
+          <tr>
+              <td>
+                  Gender:
+              </td>
+              <td>
+                  <input type="radio" name="gender" value="Male">Male</input>
+                  <input type="radio" name="gender" value="Female">Female</input>
+                  
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2">
+                  <span> Select your country:</span>
+                  <select name="Country">
+                      <option value="Egypt">Egypt</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="Egypt">Egypt</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2">
+                  <input type="file">
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2">
+                  
+                        <button class="f"  style="margin-left: 50%;" autofocus >Submit</button>
+                        <button  class="f">Reset</button>
+                 
+                  
+              </td>
+          </tr>
+      </table>
+    </body>
+</html>

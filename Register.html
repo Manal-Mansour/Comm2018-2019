@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      li {
+        display: inline;
+
+        margin: 30px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      * {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width:60%; background-color:#648990; margin: 0 auto; text-align: center ;padding: 15px; "
+    >
+      <div style="border-bottom: 2px solid black;">
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href=""> <li>Books</li></a>
+          <a href=""><li>Contacts</li></a>
+        </ul>
+      </div>
+      <div
+        style="width:70%; margin: 10px auto; border-bottom:2px solid blsck;background-color:white;"
+      >
+        <h1>Contact Details</h1>
+        <p>Please Complete the form below</p>
+        <h2>Enquiry/FeedForm</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="Your Name" required />
+          &nbsp; * required<br />
+          <label for="email">Email:</label>
+          <input type="Email" id="email" name="email" value="Your Name" /><br />
+          <label for="msg">Comment:</label>
+          <textarea id="msg" rows="5" cols="18"></textarea>
+          <br /><br />
+          <button style="margin:5% 0 10% 50% ; width:90px" ;>Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

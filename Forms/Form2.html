@@ -1,0 +1,109 @@
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      
+        input{
+          font-size:1vw;          
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        table,tr,td{
+            padding-left: 20px;
+        }
+      table {
+        width: 60%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        font-size:2vw;
+      }
+      tr.tail, tr.top{
+        background-color: orange;
+        color: yellow;
+        height: 100px;
+      }
+      .main{
+          background-color: black;
+          color: yellow;
+      }
+      .submit{
+          background-color: green;
+          margin-left: 55%;
+      }
+      .cancel{
+          background-color: red;
+             }
+             .cancel,.submit{
+                 width:20%;
+                height: 20%;
+                 margin-top: 5%;
+                 font-size:2vw;
+             }
+    </style>
+  </head>
+  <body style="background-color: silver;">
+    <table>
+     <tr class='top'>
+       <td>
+         SignUp
+       </td>
+     </tr>
+      
+            <tr class="main">
+                <td>
+                    <form>
+                      <span>Fisrt Name</span>
+                      <input
+                        type="text"
+                        name="fisrtName"
+                        Value="Enter the First Name"
+                      /><br />
+                      <span>Last Name</span>
+                      <input
+                        type="text"
+                        name="lastName"
+                        Value="Enter the Last Name"
+                      /><br />
+                      <span>Date of Birth</span>
+                      <input type="Date" name="date" /><br />
+                      <span>Gender</span>
+                      <input type="radio" name="gender" value="Male" />Male</input>
+                      <input type="radio" name="gender" value="Female" />Female</input>
+                                <br /><br/>
+                                <span>Country</span>
+                                <select name="Country">
+            
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="saudia">Saudia</option>
+                                    
+                                </select><br/>
+                              <span>Email</span>
+                                <input type="email" value="Enter the Email" name=email></input><br/>
+                                <span>Password</span>
+                                <input type="password" value="Enter the passord" name=Password></input><br/>
+                                <span>Confirm Password</span>
+                                <input type="password" value="confirm the password" name="password"></input><br/>
+            <br/>
+            <input type="checkbox" value="check" style="margin-left: 50%;">IAgree for the rules</input>
+            
+                    </form>
+                    </td>
+      </tr>
+
+      <tr class="tail">
+          <td>
+        <form>
+          <button type="button" name="submit" value="Submit" class="submit">
+            Submit
+          </button>
+          &nbsp;
+          <button type="button" name="cancel" value="Cancel" class="cancel">
+            Cancel
+          </button>
+        </form>
+        </td>     
+       </tr>
+    </table>
+  </body>
+</html>
