@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: rgb(204, 195, 195);
+      }
+      .container {
+        width: 85%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 5px;
+      }
+      header {
+        background-image: url("top.jpg");
+        height: 120px;
+        background-repeat: repeat-x;
+      }
+      .top {
+        margin: 20px auto;
+      }
+      input {
+        height: 30px;
+      }
+      input[type="radio"] {
+        margin-left: 70px;
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(192, 189, 189);
+      }
+      td:first-child {
+        border-collapse: collapse;
+        border-right: 2px solid black;
+      }
+      th {
+        background-color: black;
+        color: white;
+      }
+
+      button {
+        float: right;
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      footer {
+        clear: both;
+        background-color: black;
+        position: fixed;
+        bottom: 0px;
+        width: 75%;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 style="margin: auto 60% auto 40%; color:white;">
+          Instrructor Evaluation
+        </h1>
+      </header>
+      <div class="top">
+        <label for="courseno">Course Number* </label>
+        <input type="text" id="courseno" required />
+        <label for="instructor" style="margin-left: 40px;">Instructor* </label>
+        <input type="text" id="instructor" required />
+      </div>
+      <div style="width:100%; height:3px; background-color:gray;"></div>
+      <div>
+        <h3>
+          Please Choose the best answer for each question, The instructor*
+        </h3>
+        <table width="100%">
+          <tr>
+            <th>Field</th>
+            <th>Agree</th>
+            <th>Natural</th>
+            <th>Disagree</th>
+          </tr>
+          <tr>
+            <td>
+              Treate Students with respect
+            </td>
+            <td>
+              <input type="radio" name="respect" />
+            </td>
+            <td>
+              <input type="radio" name="respect" />
+            </td>
+            <td>
+              <input type="radio" name="respect" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Communicate clearly
+            </td>
+            <td>
+              <input type="radio" name="clear" value="agree" />
+            </td>
+            <td>
+              <input type="radio" name="clear" value="Natural" />
+            </td>
+            <td>
+              <input type="radio" name="clear" value="disagee" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Students Feel free to ask
+            </td>
+            <td>
+              <input type="radio" name="ask" value="agree" />
+            </td>
+            <td>
+              <input type="radio" name="ask" value="Natural" />
+            </td>
+            <td>
+              <input type="radio" name="ask" value="disagee" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Quizes related to the course content
+            </td>
+            <td>
+              <input type="radio" name="quiz" value="agree" />
+            </td>
+            <td>
+              <input type="radio" name="quiz" value="Natural" />
+            </td>
+            <td>
+              <input type="radio" name="quiz" value="disagee" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="background-color:white; height: 200px;">
+        <h3 style="float: left;">Submit your answer</h3>
+        <button class="a" action="a.php">Submit</button>
+      </div>
+      <footer>
+        <h4 style="color:white;">We are glad recieving your comments</h4>
+      </footer>
+    </div>
+  </body>
+</html>
