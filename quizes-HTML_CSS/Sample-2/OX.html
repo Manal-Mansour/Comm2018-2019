@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz2</title>
+    <style>
+      h1 {
+        color: rgb(94, 24, 24);
+      }
+      .a {
+        clear: both;
+        height: 50px;
+        background-color: rgb(94, 24, 24);
+        color: white;
+        font-size: 30px;
+        border-radius: 50%;
+        text-align: center;
+        width: 40%;
+      }
+      table {
+        width: 30%;
+        height: 200px;
+        border-collapse: separate;
+      }
+      table td {
+        text-align: center;
+        width: 33%;
+        padding: 3px;
+        background-color: rgb(150, 101, 55);
+        color: white;
+        font-size: 2em;
+      }
+      table td:hover {
+        background-color: rgb(100, 24, 24);
+      }
+      button {
+        margin: 0 auto;
+        background-color: rgb(94, 24, 24);
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+      }
+      .form label {
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body style="background-color:grey;">
+    <div
+      style="width:90%; margin:0 auto; background-color:white; padding: 30px;"
+    >
+      <header>
+        <h1 style="text-align: center;">TIC TAC TOE GAME</h1>
+      </header>
+      <div style="float:right;">
+        <h2>Player One</h2>
+        <div class="a">0</div>
+      </div>
+      <div style="float:left;">
+        <h2>Player Two</h2>
+        <div class="a" style="float:left;">2</div>
+      </div>
+
+      <div style=" clear:both; ">
+        <table style="margin:0 auto;">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>X</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <button style="margin:30px 43% ;">Start Over</button>
+      <div class="form">
+        <label for="playerone">Player1*</label>
+        <input
+          type="text"
+          id="playerone"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="playertwo">Player2*</label>
+        <input
+          type="text"
+          id="playertwo"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="result">RESULT</label>
+        <input
+          type="text"
+          id="result"
+          placeholder="You Can't change it manually"
+          readonly
+        />
+      </div>
+    </div>
+  </body>
+</html>
